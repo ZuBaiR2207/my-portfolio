@@ -18,7 +18,7 @@ const myProjects = [
 ]
 function Projects() {
     return (
-        <div className='py-20 bg-gray-800 text-white px 6'>
+        <div className='py-20 bg-gray-800 text-white px-6'>
             <div className='max-w-5xl mx-auto'>
                 <h2 className='text-4xl font-bold mb-12 text-center'>Some of my works</h2>
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
@@ -27,7 +27,7 @@ function Projects() {
                             <h3 className='text-2xl font-bold mb-3'>{project.title}</h3>
                             <p className='text-gray-400 mt-3'>{project.description}</p>
                             <span className='text-indigo-400 text-sm font-semibold'>
-                                {project.tech.toString()}
+                                {project.tech.join(', ')}
                             </span>
                         </div>
                     ))}

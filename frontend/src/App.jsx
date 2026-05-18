@@ -3,9 +3,9 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 const myName = "Zubair Md Talha";
-const listofBooks = ['The Psychology of Money', 'Atomic Habits', 'Deep Work', 'Rich Dad Poor Dad'];
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +15,7 @@ function App() {
       <Hero />
       <About />
       <Projects />
+      <Contact />
     </div>
   );
 }
